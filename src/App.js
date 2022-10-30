@@ -1,7 +1,8 @@
-
 import React from "react";
-import {BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { UserPage } from "./pages";
+import ErrorPage from "./pages/ErrorPage";
+
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<UserPage />} />
+          <Route path="*" element={<ErrorPage />} />
+          
         </Routes>
       </Router>
     </>

@@ -1,2 +1,68 @@
 
 @import url("./assets/css/global.css");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+.pagination {
+    margin: 20px 0px;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+    gap: 10px;
+   
+    list-style: none;
+}
+
+.pagination .page__num {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    
+}
+
+
+.pagination .page__num:hover {
+    background: green; 
+    color: #fff;
+}
+
+.pagination .active {
+    background: rgb(43, 80, 43);
+    color: #fff;
+}
+
+.error-page{
+    
+    text-align: center;
+    font-weight:bold;
+    margin-top:120px;
+    line-height: 2;
+}
+.number {
+    font-size: 60px;
+    
+}
+.number:hover{
+    color:red;
+}
+
+.paragraph {
+    font-size: 20px;;
+}
+
